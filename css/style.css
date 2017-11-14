@@ -1,11 +1,10 @@
 /* index style.css */
 
 @import url(http://fonts.googleapis.com/earlyaccess/notosansKr.css);
-/*@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css); */
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css); 
 
 *{
   font-family: 'Noto Sans KR', 'Nanum Gothic', sans-serif;
-    font-st
 }
 
 
