@@ -16,7 +16,7 @@
 /* ****************** #title 제목 ****************** */
 
 .title{width: 100%; height: 105px;}
-.title h3{display: block; width:100%; height: 32px; font-family: Nanum Gothic; font-size: 30pt; line-height: 32px; font-weight:100; text-align: center; color: #333;}
+.title h3{display: block; width:100%; height: 32px; font-size: 30pt; line-height: 32px; font-weight:100; text-align: center; color: #333;}
 .title span{display: block; width: 60px; height: 4px; margin: 34px auto 26px; background-color: #ffc63e;}
 .title p{width: 100%; height: 9px; font-family: Nanum Gothic; font-size: 9pt; text-align: center; line-height: 9px; color: #666;}
 
