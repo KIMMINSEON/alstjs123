@@ -1,40 +1,21 @@
 /* index style.css */
 
-@import url(http://fonts.googleapis.com/earlyaccess/notosansKr.css);
-@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css); 
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
 
 *{
-  font-family: 'Noto Sans KR', 'Nanum Gothic', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 
 
 html,body{width: 100%; height: 100%;}
 
-body{padding: 50px; box-sizing: border-box; background-color: #ddd;}
+body{padding: 50px; box-sizing: border-box; background-color: #ffc63e;}
 
-#wrap {width: 100%; height:100%; position: relative; background-color: #fff;}
+#wrap {width: 100%; height:100%; position: relative; background-color: #fff; box-shadow:10px 10px 15px rgba(0, 0, 0, 0.2) ;}
 
 /* *********************** header *********************** */
 
-/*
-header{width: auto; height: 100%; position:fixed; top: 75px; right: 75px;}
-
-#nav_btn{width: 40px; height: 25px; float: left; transform: rotate(0deg); transition: 0.5s ease-in-out; cursor: pointer;}
-#nav_btn span{display: block; position: absolute; height: 1px; width: 100%; background: #333; opacity: 1; left: 0; transform: rotate(0deg); transition: 0.25s ease-in-out;}
-
-#nav_btn span:nth-child(2){top: 0px;}
-#nav_btn span:nth-child(3){top: 11px;}
-#nav_btn span:nth-child(4){top: 22px;}
-
-#nav_btn.on span:nth-child(2) {top: 13px; transform: rotate(-45deg);}
-#nav_btn.on span:nth-child(3) {opacity: 0;}
-#nav_btn.on span:nth-child(4) {top: 13px; transform: rotate(-135deg);}
-*/
-
-/*#nav_box{width: 400px; height: 100%;  float: left; background-color: #dad;}*/
-
-/*.nav_back{width: 100%; height: 100%; background-color:rgba(0, 0, 0, 0.5);}*/
 
 header {width: auto; height: 100%; position: fixed; top: 0; right: 0; z-index: 200;}
 
@@ -53,7 +34,7 @@ header {width: auto; height: 100%; position: fixed; top: 0; right: 0; z-index: 2
 
 #nav_box ul {width: 100%; height: auto; margin-top: 40px;}
 #nav_box li {width: 100%; height: 100px;}
-#nav_box a {width: 100%; height: 100%; display: block; transition: 0.3s ease-in-out; font-size: 15pt; font-weight: 100; text-align: center; line-height: 100px; color: #333;}
+#nav_box a {width: 100%; height: 100%; display: block; transition: 0.3s ease-in-out; font-size: 15pt; font-weight: 100; text-align: center; line-height: 100px; font-weight: 300; color: #333;}
 #nav_box a:hover{background-color: #ffc63e;}
 
 .nav_back{transition: 0.5s ease-in-out;}
@@ -67,47 +48,55 @@ header {width: auto; height: 100%; position: fixed; top: 0; right: 0; z-index: 2
 /* *********************** #line *********************** */
 
 #line{}
-#line div{width:200px; height: 1px; position:absolute; z-index:50; background-color:#333;}
+#line div{width:200px; height: 1px; position:absolute; z-index:50; background-color:#999;}
 #line .top_line{top: 0; left: 0; transform: rotate(27deg); transform-origin: top left;}
 #line .bottom_line{bottom: 0; right: 0; z-index:50; transform: rotate(27deg); transform-origin: bottom right;}
 
 /* *********************** #content *********************** */
 
-#content {width: 400px; height: 248px; position: absolute; top: 50%; left: 50%; margin-top: -124px; margin-left: -200px; z-index: 100;}
+
+#content {width: 500px; height: 266px; position: absolute; top: 50%; left: 50%; margin-top: -133px; margin-left: -250px; z-index: 100;}
+
+#content dl dd:nth-of-type(1){width: 110px; height: 110px; margin: 0 auto; background-image: url(../img/logo01.png); background-repeat: no-repeat; background-position: center; background-size:contain}
+
+#content dl dd:nth-of-type(2),
+#content dl dd:nth-of-type(2) span{height: 45px; margin-top: 64px; font-size: 45pt; font-weight: 100; text-align: center; color: #333; line-height: 45px; letter-spacing: 14px;}
+#content dl dd:nth-of-type(2) span{letter-spacing: 0;}
+
+#content dl dd:nth-of-type(3){height: 16px; margin-top: 30px; font-size: 13pt; text-align: center; line-height: 16px; color: #fff; letter-spacing: 6px;}
+#content dl dd:nth-of-type(3) p{display: inline-block; color: #777; font-weight: 300;}
+
+/*#content {width: 900px; height: 266px; position: absolute; top: 50%; left: 50%; margin-top: -133px; margin-left: -450px; z-index: 100;}
 
 #content dl dd:nth-of-type(1){width: 110px; height: 110px; margin: 0 auto; background-image: url(../img/logo.png); background-repeat: no-repeat; background-position: center; background-size:contain}
 
 #content dl dd:nth-of-type(2),
-#content dl dd:nth-of-type(2) span{height: 38px; margin-top: 64px; font-size: 36pt; font-weight: 100; text-align: center; color: #333; line-height: 38px; letter-spacing: 14px;}
+#content dl dd:nth-of-type(2) span{height: 80px; margin-top: 64px; font-size: 70pt; font-weight: 800; text-align: center; color: #333; line-height: 80px; letter-spacing: 14px; }
 #content dl dd:nth-of-type(2) span{letter-spacing: 0;}
 
-#content dl dd:nth-of-type(3){height: 16px; margin-top: 20px; font-size: 13pt; text-align: center; font-weight: 100; line-height: 16px; color: #666; letter-spacing: 6px;}
-#content dl dd:nth-of-type(3) p{display: inline-block;}
+#content dl dd:nth-of-type(3){height: 16px; margin-top: 6px; font-size: 18pt; text-align: center; font-weight: 800; line-height: 16px; color: #fff; letter-spacing: 12px;}
+#content dl dd:nth-of-type(3) p{display: inline-block; color: #333;}*/
 
+/* 
+====================================================================
+   768px - 959px
+====================================================================
+*/
 
-/*
-#content_logo {width: 110px; height: 110px; margin: 0 auto;}
-#content_logo h1 {width: 100%; height: 100%; background-image: url(../img/logo.png); background-repeat: no-repeat; background-position: center; background-size:contain}
-#wrap h1 span {}*/
+@media screen and (min-width: 767px) and (max-width: 959px){
+    
+    /* *********************** #content *********************** */
 
-/*#content_txt {}
-#content_txt p{display: block; text-align: center;}
-#content_txt p:nth-child(1),#content_txt span{height: 38px; margin-top: 64px; font-family: NanumGothicLight; font-size: 30pt; font-weight: 100; color: #333; line-height: 38px; letter-spacing: 10px;}
-#content_txt span{margin-top: 0; letter-spacing: 0;}
+    #content {width: 500px; height: 238px; position: absolute; top: 50%; left: 50%; margin-top: -129px; margin-left: -250px; z-index: 100;}
 
-#content_txt p:nth-child(2) {height: 10px; margin-top: 20px; font-size: 9pt; font-weight: 100; line-height: 10px; color: #888; letter-spacing: 5px;}*/
+    #content dl dd:nth-of-type(1){width: 90px; height: 90px;}
 
+    #content dl dd:nth-of-type(2),
+    #content dl dd:nth-of-type(2) span{height: 40px; margin-top: 64px; font-size: 36pt; line-height: 40px;}
 
-/*#content_txt .folio{text-align: center;}
-#content_txt .folio p{display: block; float: left; height: 38px; margin-top: 64px; font-size: 40pt; font-weight: 100; text-align: center; color: #333; line-height: 38px; letter-spacing: 15px;}
-#content_txt .folio .last{letter-spacing: 0;}
-
-
-#content_txt .text{width: 100%; height: 10px; margin-top: 20px; text-align: center;}
-#content_txt .text p:nth-of-type(1),
-#content_txt .text p:nth-of-type(2),
-#content_txt .text p:nth-of-type(3){display: inline-block; height: 10px; font-size: 13pt; font-weight: 100; line-height: 10px; color: #888; letter-spacing: 7px;}*/
-
+    #content dl dd:nth-of-type(3){height: 16px; margin-top: 30px; font-size: 11pt; text-align: center; line-height: 16px; color: #fff; letter-spacing: 6px;}
+    #content dl dd:nth-of-type(3) p{display: inline-block; color: #777; font-weight: 300;}
+}
 
 
 /* 
@@ -136,6 +125,7 @@ header {width: auto; height: 100%; position: fixed; top: 0; right: 0; z-index: 2
 
     #nav_box ul {margin-top: 40px;}
     #nav_box li {height: 80px;}
+    #nav_box a{ line-height: 80px; }
 
     #nav_btn.on{right: 350px;}
 
@@ -189,7 +179,7 @@ header {width: auto; height: 100%; position: fixed; top: 0; right: 0; z-index: 2
 
     #nav_box ul {margin-top: 20px;}
     #nav_box li {height: 60px;}
-    #nav_box a {font-size: 12pt; font-weight: 100; text-align: center; line-height: 60px; color: #333;}
+    #nav_box a {font-size: 12pt; font-weight: 300; text-align: center; line-height: 60px; color: #333;}
 
     #nav_btn.on{right: 230px;}
 
