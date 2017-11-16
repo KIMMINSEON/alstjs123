@@ -15,7 +15,7 @@
 /* ****************** #title 제목 ****************** */
 
 .title{width: 100%; height: 105px;}
-.title h3{display: block; width:100%; height: 32px; font-family:'Nanum Gothic', sans-serif; font-size: 30pt; line-height: 32px; font-weight:100; text-align: center; color: #333;}
+.title h3{display: block; width:100%; height: 35px; font-family:'Nanum Gothic', sans-serif; font-size: 30pt; line-height: 35px; font-weight:100; text-align: center; color: #333;}
 .title span{display: block; width: 60px; height: 4px; margin: 34px auto 26px; background-color: #ffc63e;}
 .title p{width: 100%; height: 9px; font-family:'Nanum Gothic', sans-serif; font-size: 9pt; text-align: center; line-height: 9px; color: #666;}
 
@@ -31,7 +31,7 @@
 .about ul li{margin-top: 50px;}
 .about ul li strong{display: block; height: 15px; font-size: 14.5pt; font-family:'Nanum Gothic', sans-serif; font-weight: 600; line-height: 15px; color: #333;}
 .about ul li span{display: block; width: 30px; height: 2px; margin: 10px auto 0; background-color: #ffc63e;}
-.about ul li p{height: 12px; margin-top: 20px; font-family: Nanum Gothic; font-size:11pt; line-height: 12px; color: #555;}
+.about ul li p{height: 12px; margin-top: 20px; font-family:'Nanum Gothic', sans-serif; font-size:11pt; line-height: 12px; color: #555;}
 
 
 /* ****************** career ****************** */
