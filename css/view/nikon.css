@@ -10,11 +10,11 @@
 
     #section1{width:960px; margin: 0 auto;}
 
-    #section1 img{max-width: 100%;}
+    #section1 img{display: block; max-width: 100%; margin: 0 auto;}
     #section1 img:nth-of-type(2){display: none;}
     #section1 img:nth-of-type(3){display: none;}
 
-    #section2{width: 960px; height: 770px; margin: 0 auto;}
+    #section2{max-width: 960px; height: 770px; margin: 0 auto;}
     .home_link{width: 140px; height: 90px; padding-top: 340px; margin:auto;}
     .home_link>li{width: 140px; height: 35px; display: block; border: 1px solid  #333; box-sizing: border-box;}
     .home_link>li:nth-of-type(2){margin-top: 20px;}
@@ -27,14 +27,18 @@
     #section1 img:nth-of-type(2){display: block;}
     #section1 img:nth-of-type(3){display: none;}
     
+    #section2{height: 400px; margin: 0 auto;}
+    .home_link{padding-top: 80px; margin:auto;}
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px){
+@media screen and (max-width: 767px){
     #section1{width: 100%;}
     #section1 img:nth-of-type(1){display: none;}
     #section1 img:nth-of-type(2){display: none;}
     #section1 img:nth-of-type(3){display: block;}
     
+    #section2{height: 400px; margin: 0 auto;}
+    .home_link{padding-top: 80px; margin:auto;}
 }
 
 @media screen and (max-width: 479px){
@@ -42,6 +46,9 @@
     #section1 img:nth-of-type(1){display: none;}
     #section1 img:nth-of-type(2){display: none;}
     #section1 img:nth-of-type(3){display: block;}
+    
+    #section2{height: 300px; margin: 0 auto;}
+    .home_link{padding-top: 80px; margin:auto;}
 }
 
 
